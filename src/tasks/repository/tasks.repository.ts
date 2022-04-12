@@ -35,9 +35,7 @@ class TasksRepository extends Repository<Task> {
       );
     }
 
-    const tasks = await query.getMany();
-
-    return tasks;
+    return await query.getMany();
   }
 }
 
